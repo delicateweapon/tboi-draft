@@ -1,0 +1,40 @@
+#pragma once
+
+typedef enum {
+    RESET = 0,
+    FG_BLACK,
+    FG_RED,
+    FG_GREEN,
+    FG_YELLOW,
+    FG_BLUE,
+    FG_MAGENTA,
+    FG_CYAN,
+    FG_WHITE,
+    FG_BRIGHT_BLACK,
+    FG_BRIGHT_RED,
+    FG_BRIGHT_GREEN,
+    FG_BRIGHT_YELLOW,
+    FG_BRIGHT_BLUE,
+    FG_BRIGHT_MAGENTA,
+    FG_BRIGHT_CYAN,
+    FG_BRIGHT_WHITE,
+    BG_BLACK,
+    BG_RED,
+    BG_GREEN,
+    BG_YELLOW,
+    BG_BLUE,
+    BG_MAGENTA,
+    BG_CYAN,
+    BG_WHITE,
+    BG_BRIGHT_BLACK,
+    BG_BRIGHT_RED,
+    BG_BRIGHT_GREEN,
+    BG_BRIGHT_YELLOW,
+    BG_BRIGHT_BLUE,
+    BG_BRIGHT_MAGENTA,
+    BG_BRIGHT_CYAN,
+    BG_BRIGHT_WHITE,
+} AsciiColor;
+
+void pretty_print(AsciiColor bg, AsciiColor fg, const char *message, ...);
+void pretty_print_error(AsciiColor bg, AsciiColor fg, const char *message, ...);
